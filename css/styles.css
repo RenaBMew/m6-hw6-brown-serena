@@ -1,0 +1,185 @@
+/*The asterik is used to reference the entire page, border-bottom:image wrap;*/ 
+* {
+    margin: 0;
+    border: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url('../images/IMG_8817.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+}
+
+header > p {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 4em;
+    color: #fae89a;
+
+}
+
+/*Nav bar*/ 
+
+nav {
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navname {
+    margin-right: auto;
+}
+
+.navbar a.link {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 28px;
+    color: white;
+    padding: 12px;
+}
+  
+.navbar a:hover:not(.active) {
+    color: rgb(36, 36, 36);
+    background-color: #fae89a;
+}
+
+.navbar a.active {
+    background-color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+    ul.navbar a.right, 
+    ul.navbar a {float: none;}
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.content > div.main {
+    background-color:white;
+    max-width: 600px;
+    padding: 0 15px 20px;
+}
+
+.content > div.aside {
+    width: 240px;
+    height: 150px;
+    background: white;
+    text-align: center;
+    padding: 0 15px;
+}
+
+main {
+    background-color:white;
+    max-width: 900px;
+    padding: 0 20px 50px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+}
+
+aside > h2 {
+    font-family: 'Caveat Brush', cursive;
+    color:#6DAA90;
+    font-size: 2em;
+    font-style: italic;
+    padding: 10px;
+}
+
+img.icon {
+    margin: 10px 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(173, 173, 173);
+}
+
+h1 {
+    font-family: 'Caveat Brush', cursive;
+    color:#6DAA90;
+    font-size: 2.5em;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+h2, h3, h4 {
+    color:#bb6746;
+    font-size: 20px;
+    text-align: left;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:#333;
+    height: 2px;
+  }
+
+article > p {
+    color: #333;
+    margin: 10px auto;
+    text-indent: 1cm;
+    text-align: left;
+}
+
+.image {
+    float: left;
+    margin: 0 20px 10px 0;
+    box-shadow: 5px 5px 10px rgb(189, 189, 189);
+}
+
+a:link, a:visited, a:active {
+    color:#75bf92;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#fae89a;
+}
+
+/*CSS classes*/
+
+.screen-reader-link {
+    position: absolute;
+    width: 1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+/*Attribute psuedo*/
+a[target="_blank"]::after {
+    content: url(../images/external-link-icon.svg);
+    display: inline-block;
+    margin-left: 0.1em;
+    width: .9em;
+    height: .9em;
+  }
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    background-color:rgb(36, 36, 36);
+    color: white;
+    padding: 10px;
+}
